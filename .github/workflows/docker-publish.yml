@@ -24,13 +24,13 @@ jobs:
         run: |
           docker build -t ${{ secrets.DOCKER_USERNAME }}/dsci310-ia3-wzy716-docker:latest .
           docker tag ${{ secrets.DOCKER_USERNAME }}/dsci310-ia3-wzy716-docker:latest ${{ secrets.DOCKER_USERNAME }}/dsci310-ia3-wzy716-docker:1.0
-          docker tag ${{ secrets.DOCKER_USERNAME }}/dsci310-ia3-wzy716-docker:latest ${{ secrets.DOCKER_USERNAME }}/dsci310-ia3-wzy716-docker:dockerfile-practice
+          docker tag ${{ secrets.DOCKER_USERNAME }}/dsci310-ia3-wzy716-docker:latest ${{ secrets.DOCKER_USERNAME }}/dsci310-ia3-wzy716-docker:dockerfile-practice_1.1
 
       - name: Push Docker Image to DockerHub
         run: |
           docker push ${{ secrets.DOCKER_USERNAME }}/dsci310-ia3-wzy716-docker:latest
           docker push ${{ secrets.DOCKER_USERNAME }}/dsci310-ia3-wzy716-docker:1.0
-          docker push ${{ secrets.DOCKER_USERNAME }}/dsci310-ia3-wzy716-docker:dockerfile-practice
+          docker push ${{ secrets.DOCKER_USERNAME }}/dsci310-ia3-wzy716-docker:dockerfile-practice_1.1
 
 
         
