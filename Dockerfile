@@ -26,3 +26,4 @@ WORKDIR /home/rstudio
 CMD ["/init"]
 
 # Version 1.1 update
+# Version 1.2 update
